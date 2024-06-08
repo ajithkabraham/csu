@@ -8,7 +8,8 @@ class ItemToPurchase:
         self.item_quantity = item_quantity
     # function to print the total cost
     def print_item_cost(self):
-        print(self.item_name[0],' ', self.item_quantity, " @ $", self.item_price[0], " = $", (self.item_quantity * self.item_price[0]),sep='' )
+        print(self.item_name[0],' ', self.item_quantity, " @ $", self.item_price[0], ' = ${:.2f}'.format(self.item_quantity * self.item_price[0]),sep='' )
+        return (self.item_quantity * self.item_price[0])
 
 # Gather details for first item
 print("Item 1")
@@ -25,5 +26,8 @@ item_quantity = int(input("Enter the item quantity:\n"))
 item2 = ItemToPurchase(item_name, item_price,item_quantity)
 
 # Print the item details
-item1.print_item_cost()
-item2.print_item_cost()
+print('TOTAL COST')
+item1_total = item1.print_item_cost()
+item2_total = item2.print_item_cost()
+print('Total: ${:.2f}'.format(item1_total + item2_total))
+
