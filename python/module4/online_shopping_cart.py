@@ -55,19 +55,19 @@ class ShoppingCart:
 # Main code
 # Gather details for first item
 print("Item 1")
-#item_name = input("Enter the item name:\n")
-#item_price = float(input("Enter the item price:\n"))
-#item_quantity = int(input("Enter the item quantity:\n"))
-#item1 = ItemToPurchase(item_name, item_price,item_quantity)
-item1 = ItemToPurchase('Chips', 2,10)
+item_name = input("Enter the item name:\n")
+item_price = float(input("Enter the item price:\n"))
+item_quantity = int(input("Enter the item quantity:\n"))
+item1 = ItemToPurchase(item_name, item_price,item_quantity)
+#item1 = ItemToPurchase('Chips', 2,10)
 
 # Gather details for second item
 print("Item 2")
-#item_name = input("Enter the item name:\n")
-#item_price = float(input("Enter the item price:\n"))
-#item_quantity = int(input("Enter the item quantity:\n"))
-#item2 = ItemToPurchase(item_name, item_price,item_quantity)
-item2 = ItemToPurchase('headphones', 3,40)
+item_name = input("Enter the item name:\n")
+item_price = float(input("Enter the item price:\n"))
+item_quantity = int(input("Enter the item quantity:\n"))
+item2 = ItemToPurchase(item_name, item_price,item_quantity)
+#item2 = ItemToPurchase('headphones', 3,40)
 
 # Print the item details
 print('TOTAL COST')
